@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Affirm - Daily Affirmations",
-    "slug": "dailyaffirmations",
+    "slug": "daily-affirmation-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
@@ -32,7 +32,6 @@
         "backgroundColor": "#7C3AED"
       },
       "package": "com.affirm.dailyaffirmations",
-      "versionCode": 1,
       "permissions": [
         "NOTIFICATIONS",
         "RECEIVE_BOOT_COMPLETED",
@@ -40,8 +39,7 @@
         "VIBRATE",
         "INTERNET",
         "ACCESS_NETWORK_STATE"
-      ],
-      "googleServicesFile": "./google-services.json"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -92,15 +90,8 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "9a2aec84-1ecd-4752-b8fb-79f75ae0f147"
+        "projectId": "10d90e20-4c82-4358-b8c5-e8fa307d5a66"
       }
-    },
-    "owner": "pragmaticdevs",
-    "runtimeVersion": {
-      "policy": "appVersion"
-    },
-    "updates": {
-      "url": ""
     }
   }
 }
