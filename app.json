@@ -1,0 +1,106 @@
+{
+  "expo": {
+    "name": "Affirm - Daily Affirmations",
+    "slug": "dailyaffirmations",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#7C3AED"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.affirm.dailyaffirmations",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "This allows us to personalize your affirmation experience.",
+        "UIBackgroundModes": [
+          "remote-notification"
+        ]
+      },
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#7C3AED"
+      },
+      "package": "com.affirm.dailyaffirmations",
+      "versionCode": 1,
+      "permissions": [
+        "NOTIFICATIONS",
+        "RECEIVE_BOOT_COMPLETED",
+        "SCHEDULE_EXACT_ALARM",
+        "VIBRATE",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE"
+      ],
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-asset",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#7C3AED",
+          "sounds": [],
+          "defaultChannel": "daily-affirmation"
+        }
+      ],
+      [
+        "react-native-android-widget",
+        {
+          "widgets": [
+            {
+              "name": "AffirmationWidgetSmall",
+              "label": "Daily Affirmation",
+              "description": "Shows your daily affirmation",
+              "minWidth": "110dp",
+              "minHeight": "110dp",
+              "targetCellWidth": 2,
+              "targetCellHeight": 2,
+              "updatePeriodMillis": 86400000,
+              "previewImage": "./assets/widget-preview-small.png",
+              "widgetFeatures": "reconfigurable"
+            },
+            {
+              "name": "AffirmationWidgetMedium",
+              "label": "Daily Affirmation (Wide)",
+              "description": "Shows your daily affirmation in a wide card",
+              "minWidth": "250dp",
+              "minHeight": "110dp",
+              "targetCellWidth": 4,
+              "targetCellHeight": 2,
+              "updatePeriodMillis": 86400000,
+              "previewImage": "./assets/widget-preview-medium.png",
+              "widgetFeatures": "reconfigurable"
+            }
+          ]
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "9a2aec84-1ecd-4752-b8fb-79f75ae0f147"
+      }
+    },
+    "owner": "pragmaticdevs",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": ""
+    }
+  }
+}
