@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Affirm - Daily Affirmations",
-    "slug": "daily-affirmation-app",
+    "slug": "dailyaffirmations",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
