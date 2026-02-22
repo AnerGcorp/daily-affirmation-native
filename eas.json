@@ -7,10 +7,8 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "install": {
-        "command": "npm install --legacy-peer-deps"
-      },
       "env": {
+        "NPM_CONFIG_LEGACY_PEER_DEPS": "true",
         "EXPO_PUBLIC_SUPABASE_URL": "${EXPO_PUBLIC_SUPABASE_URL}",
         "EXPO_PUBLIC_SUPABASE_ANON_KEY": "${EXPO_PUBLIC_SUPABASE_ANON_KEY}"
       }
@@ -20,20 +18,16 @@
       "android": {
         "buildType": "apk"
       },
-      "install": {
-        "command": "npm install --legacy-peer-deps"
-      },
       "env": {
+        "NPM_CONFIG_LEGACY_PEER_DEPS": "true",
         "EXPO_PUBLIC_SUPABASE_URL": "${EXPO_PUBLIC_SUPABASE_URL}",
         "EXPO_PUBLIC_SUPABASE_ANON_KEY": "${EXPO_PUBLIC_SUPABASE_ANON_KEY}"
       }
     },
     "production": {
       "autoIncrement": true,
-      "install": {
-        "command": "npm install --legacy-peer-deps"
-      },
       "env": {
+        "NPM_CONFIG_LEGACY_PEER_DEPS": "true",
         "EXPO_PUBLIC_SUPABASE_URL": "${EXPO_PUBLIC_SUPABASE_URL}",
         "EXPO_PUBLIC_SUPABASE_ANON_KEY": "${EXPO_PUBLIC_SUPABASE_ANON_KEY}"
       }
